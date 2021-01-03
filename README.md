@@ -61,7 +61,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#Supported Operating System">Supported Operating System</a>
+    <li><a href="#OS">Supported Operating System</a>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -122,7 +122,7 @@ After making the necessary installations, you need to use the following commands
    python3 Riglsable.py
    ```
 
-## Supported Operating System
+## OS
 * Linux
 
 <!-- LICENSE -->
