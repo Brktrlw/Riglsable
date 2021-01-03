@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/BrktrLawliet/Riglsable">
-    <img src="C:\Users\BERKAY\Documents\images\logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Riglsable</h3>
@@ -132,7 +132,7 @@ After making the necessary installations, you need to use the following commands
 
 ## Images
 Sample images about the application.
-<img a="href"></img>
+<img a="logo.png"></img>
 
 
 ## License
