@@ -105,15 +105,10 @@
 
 To get a local copy up and running follow these simple steps.
 
-## Installation
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
+
+This is an example of how to list things you need to use the software and how to install them.
 
 1. Clone the repo
    ```sh
@@ -151,7 +146,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Berkay Şen - [@instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z
+Berkay Şen - [@instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
 E-Mail Address:E-Mail - brktrl@protonmail.ch
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
