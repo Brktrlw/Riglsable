@@ -124,7 +124,7 @@ After making the necessary installations, you need to use the following commands
 
 ## OS
 * Linux
-<br>
+
 <!-- LICENSE -->
 ## License
 
