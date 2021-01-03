@@ -51,7 +51,7 @@
 ## About The Project
 
 
-**Nmap is a graphical interface tool that facilitates the use of many tools such as nikto.**
+**It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto, dirb.**
 
 `BrktrLawliet`,
 `brktrl@protonmail.ch`
