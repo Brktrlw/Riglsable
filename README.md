@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/BrktrLawliet/Riglsable">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="C:\Users\BERKAY\Documents\images\logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Riglsable</h3>
@@ -62,6 +62,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#OS">Supported Operating System</a>
+    <li><a href="Images">Example Images</a>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -129,7 +130,11 @@ After making the necessary installations, you need to use the following commands
 ## OS
 * Linux
 
-<!-- LICENSE -->
+## Images
+Sample images about the application.
+<img a="href"></img>
+
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
