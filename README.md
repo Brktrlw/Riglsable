@@ -117,15 +117,15 @@ This is an example of how to list things you need to use the software and how to
 
 After making the necessary installations, you need to use the following commands to start the application.
 
-1. Open with python3 Riglsable.
+* Open with python3 Riglsable.
    ```sh
    python3 Riglsable.py
    ```
-If it fails try this
+* If it fails try this command.
  ```sh
    python Riglsable.py
    ```
-   
+
 ## OS
 * Linux
 
