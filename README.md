@@ -8,15 +8,16 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Riglsable</h3>
+  <h3 align="center">Riglsable v1.0</h3>
 
   <p align="center">
     Riglsable Cyber Offensive Tool
     <br />
     <br />
-    <address>
+    <p align="center"><address>
     <a href="mailto:brktrl@protonmail.ch">Report Bug</a>
     </address>
+    </p>
   </p>
 </p>
 
@@ -51,7 +52,8 @@
 ## About The Project
 
 
-**It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto, dirb.**
+**It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto, dirb.**<br>
+**Update 1.2 is coming soon keep waiting...**
 
 `BrktrLawliet`,
 `brktrl@protonmail.ch`
