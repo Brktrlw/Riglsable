@@ -1,0 +1,8 @@
+# Nmap 7.91 scan initiated Sun Jan  3 09:51:54 2021 as: nmap -sn -n -v --open -oN output.txt 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.00036s latency).
+MAC Address: 88:AC:C0:7A:D1:D0 (Zyxel Communications)
+Nmap scan report for 192.168.1.8
+Host is up.
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Jan  3 09:51:56 2021 -- 256 IP addresses (2 hosts up) scanned in 1.94 seconds
