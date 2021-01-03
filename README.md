@@ -95,8 +95,8 @@
 
 ### Built With
 
-* [PyQt5]()
-* [Python3]()
+* [PyQt5](https://pypi.org/project/PyQt5/)
+* [Python3](https://www.python.org)
 
 
 
@@ -105,7 +105,7 @@
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+## Installation
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -121,7 +121,11 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   cd Riglsable
+   ```
+3. Install NPM packages
+   ```sh
+   python3 setup.py
    ```
 
 
