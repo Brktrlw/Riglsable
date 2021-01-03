@@ -42,8 +42,9 @@
     Riglsable Cyber Offensive Tool
     <br />
     <br />
-    <a>Report Bug</a>
-    brktrl@protonmail.c
+    <address>
+    <a href="mailto:brktrl@protonmail.ch">Report Bug</a>
+    </address>
   </p>
 </p>
 
@@ -138,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Berkay Şen - [Instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
-E-Mail Address:[E-Mail](brktrl@protonmail.ch)
+E-Mail Address:E-Mail - brktrl@protonmail.ch
 
 Project Link: [https://github.com/BrktrLawliet/Riglsable](https://github.com/BrktrLawliet/Riglsable)
 
