@@ -109,8 +109,8 @@ After making the necessary installations, you need to use the following commands
 
 ## Images
 Sample images about the application.
-<img a="images/images1.jpg"></img><br>
-<img a="images/images2.jpg"></img>
+<img src="images/images1.jpg"></img><br>
+<img src="images/images2.jpg"></img>
 
 ## License
 
