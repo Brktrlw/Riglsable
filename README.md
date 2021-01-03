@@ -91,8 +91,6 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 
-
-
 ## Usage
 
 After making the necessary installations, you need to use the following commands to start the application.
@@ -112,7 +110,7 @@ After making the necessary installations, you need to use the following commands
 ## Images
 Sample images about the application.
 <img src="images/image1.jpg"></img><br>
-<img src="images/image2.jpg"></img>
+
 
 ## License
 
