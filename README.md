@@ -42,7 +42,7 @@
     Riglsable Cyber Offensive Tool
     <br />
     <br />
-    <a href="brktrl@protonmail.ch">Report Bug</a>
+    <a href="brktrl@protonmail.ch" target="_blank">Report Bug</a>
   </p>
 </p>
 
