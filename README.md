@@ -8,7 +8,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Riglsable v1.0</h3>
+  <h3 align="center">Riglsable v1.0 beta</h3>
 
   <p align="center">
     Riglsable Cyber Offensive Tool
