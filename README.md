@@ -100,7 +100,7 @@ After making the necessary installations, you need to use the following commands
    python3 Riglsable.py
    ```
 * If it fails try this command.
- ```sh
+   ```sh
    python Riglsable.py
    ```
 
