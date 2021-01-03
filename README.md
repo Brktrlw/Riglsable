@@ -22,12 +22,6 @@
 -->
 
 
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![Instagram][https://www.instagram.com/brktrll.z/]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -67,6 +61,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#OS">Supported Operating System</a>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -127,7 +122,9 @@ After making the necessary installations, you need to use the following commands
    python3 Riglsable.py
    ```
 
-
+## OS
+* Linux
+<br>
 <!-- LICENSE -->
 ## License
 
