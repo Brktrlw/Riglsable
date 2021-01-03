@@ -146,20 +146,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Berkay Şen - [@instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
+Berkay Şen - [Instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
 E-Mail Address:E-Mail - brktrl@protonmail.ch
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
+Project Link: [https://github.com/BrktrLawliet/Riglsable](https://github.com/BrktrLawliet/Riglsable)
 
 
 
