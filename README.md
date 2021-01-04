@@ -4,7 +4,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/BrktrLawliet/Riglsable">
+  <a href="https://github.com/Brktrlw/Riglsable">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -79,7 +79,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   sudo git clone https://github.com/BrktrLawliet/Riglsable.git
+   sudo git clone https://github.com/Brktrlw/Riglsable
    ```
 2. Login to installed folder
    ```sh
@@ -122,7 +122,7 @@ Copyright (c) 2021 BrktrL
 Berkay Şen - [Instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
 E-Mail Address:E-Mail - brktrl@protonmail.ch
 
-Project Link: [https://github.com/BrktrLawliet/Riglsable](https://github.com/BrktrLawliet/Riglsable)
+Project Link: [https://github.com/BrktrLawliet/Riglsable](https://github.com/Brktrlw/Riglsable)
 
 
 

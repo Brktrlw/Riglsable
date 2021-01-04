@@ -1205,7 +1205,7 @@ class Ui_MainWindow(object):
 	        
         It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto,dirb.Update 1.2 is coming soon keep waiting...
         
-        More detailed information about the application can be found at this address: https://github.com/BrktrLawliet/Riglsable
+        More detailed information about the application can be found at this address: https://github.com/Brktrlw/Riglsable
 
         Distributed under the MIT License. See license for more information.Copyright (c) 2021 BrktrL
         
