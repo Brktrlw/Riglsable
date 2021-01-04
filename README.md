@@ -122,7 +122,7 @@ Copyright (c) 2021 BrktrL
 Berkay Şen - [Instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br>
 E-Mail Address:E-Mail - brktrl@protonmail.ch
 
-Project Link: [https://github.com/BrktrLawliet/Riglsable](https://github.com/Brktrlw/Riglsable)
+Project Link: [https://github.com/Brktrlw/Riglsable](https://github.com/Brktrlw/Riglsable)
 
 
 
