@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Brktrlw/Riglsable">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo1.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Riglsable v1.0 beta</h3>
@@ -115,7 +115,7 @@ Sample images about the application.
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.<br>
-Copyright (c) 2021 BrktrL
+Copyright (c) 2021 
 
 ## Contact
 
