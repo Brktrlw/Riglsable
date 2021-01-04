@@ -79,7 +79,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/BrktrLawliet/Riglsable.git
+   sudo git clone https://github.com/BrktrLawliet/Riglsable.git
    ```
 2. Login to installed folder
    ```sh
@@ -87,7 +87,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Install setup.py packages
    ```sh
-   python3 setup.py
+   sudo python3 setup.py
    ```
 
 
@@ -97,11 +97,11 @@ After making the necessary installations, you need to use the following commands
 
 * Open with python3 Riglsable.
    ```sh
-   python3 Riglsable.py
+   sudo python3 Riglsable.py
    ```
 * If it fails try this command.
    ```sh
-   python Riglsable.py
+   sudo python Riglsable.py
    ```
 
 ## OS
