@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         MainWindow.setGeometry(200,200,1600,730)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-##################################----------LABELS--------##################################
+########################################---------LABELS--------########################################
         self.label_wallpaper = QtWidgets.QLabel(self.centralwidget)
         self.label_wallpaper.setGeometry(QtCore.QRect(0, 0, 1611, 681))
         self.label_wallpaper.setText("")
@@ -74,8 +74,8 @@ class Ui_MainWindow(object):
         self.label_payload.setGeometry(QtCore.QRect(950, 330, 100, 31))
         self.label_payload.setObjectName("label_payload")
         self.label_payload.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-##################################----------LABELS--------##################################
-##################################----------Line Edits--------##################################
+########################################---------LABELS--------########################################
+########################################---------Line Edits----########################################
         self.lineEdit_router_ip_address = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_router_ip_address.setGeometry(QtCore.QRect(1090, 130, 131, 33))
         self.lineEdit_router_ip_address.setObjectName("lineEdit_router_ip_address")
@@ -104,8 +104,8 @@ class Ui_MainWindow(object):
         self.lineEdit_port.setObjectName("lineEdit_port")
         self.lineEdit_port.setPlaceholderText(" 22,80,23 ")
         self.lineEdit_port.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-##################################----------Line Edits--------##################################
-##################################----------Buttons--------##################################
+########################################---------Line Edits----########################################
+########################################---------Buttons-------########################################
         self.pushButton_nmap_1 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_1.setGeometry(QtCore.QRect(30, 90, 96, 35))
         self.pushButton_nmap_1.setObjectName("pushButton_nmap_1")
@@ -166,20 +166,20 @@ class Ui_MainWindow(object):
         self.pushButton_nmap_12.setObjectName("pushButton_nmap_12")
         self.pushButton_nmap_12.clicked.connect(self.nmap_12)
 
-        self.pushButton_nmap_13 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_nmap_13.setGeometry(QtCore.QRect(30, 250, 96, 35))
-        self.pushButton_nmap_13.setObjectName("pushButton_nmap_13")
-        self.pushButton_nmap_13.clicked.connect(self.nmap_13)
+        #self.pushButton_nmap_13 = QtWidgets.QPushButton(self.centralwidget)
+        #self.pushButton_nmap_13.setGeometry(QtCore.QRect(30, 250, 96, 35))
+        #self.pushButton_nmap_13.setObjectName("pushButton_nmap_13")
+        #self.pushButton_nmap_13.clicked.connect(self.nmap_13)
 
-        self.pushButton_nmap_14 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_nmap_14.setGeometry(QtCore.QRect(130, 250, 96, 35))
-        self.pushButton_nmap_14.setObjectName("pushButton_nmap_14")
-        self.pushButton_nmap_14.clicked.connect(self.nmap_14)
+        #self.pushButton_nmap_14 = QtWidgets.QPushButton(self.centralwidget)
+        #self.pushButton_nmap_14.setGeometry(QtCore.QRect(130, 250, 96, 35))
+        #self.pushButton_nmap_14.setObjectName("pushButton_nmap_14")
+        #self.pushButton_nmap_14.clicked.connect(self.nmap_14)
 
-        self.pushButton_nmap_15 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_nmap_15.setGeometry(QtCore.QRect(230, 250, 96, 35))
-        self.pushButton_nmap_15.setObjectName("pushButton_nmap_15")
-        self.pushButton_nmap_15.clicked.connect(self.nmap_15)
+        #self.pushButton_nmap_15 = QtWidgets.QPushButton(self.centralwidget)
+        #self.pushButton_nmap_15.setGeometry(QtCore.QRect(230, 250, 96, 35))
+        #self.pushButton_nmap_15.setObjectName("pushButton_nmap_15")
+        #self.pushButton_nmap_15.clicked.connect(self.nmap_15)
 
         self.pushButton_tools_1 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_1.setGeometry(QtCore.QRect(30, 330, 96, 35))
@@ -265,8 +265,8 @@ class Ui_MainWindow(object):
         self.pushButton_payload.setGeometry(QtCore.QRect(1060, 330, 131, 35))
         self.pushButton_payload.setObjectName("pushButton_payload")
         self.pushButton_payload.clicked.connect(self.payload)
-##################################---------Buttons--------##################################
-##################################---------Raise--------##################################
+########################################---------Buttons-------########################################
+########################################---------Raise---------########################################
         self.label_wallpaper.raise_()
         self.lineEdit_site.raise_()
         self.label_port.raise_()
@@ -284,9 +284,9 @@ class Ui_MainWindow(object):
         self.pushButton_nmap_9.raise_()
         self.pushButton_nmap_12.raise_()
         self.label_nmap.raise_()
-        self.pushButton_nmap_14.raise_()
-        self.pushButton_nmap_15.raise_()
-        self.pushButton_nmap_13.raise_()
+        #self.pushButton_nmap_14.raise_()
+        #self.pushButton_nmap_15.raise_()
+        #self.pushButton_nmap_13.raise_()
         self.label_tools.raise_()
         self.pushButton_tools_2.raise_()
         self.pushButton_tools_1.raise_()
@@ -315,8 +315,8 @@ class Ui_MainWindow(object):
         self.pushButton_macchanger_original.raise_()
         self.label_payload.raise_()
         self.pushButton_payload.raise_()
-##################################---------Raise--------##################################
-##################################---------Menubar--------##################################
+########################################---------Raise---------########################################
+########################################---------Menubar-------########################################
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1599, 31))
@@ -328,16 +328,17 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.actionInformation = QtWidgets.QAction(MainWindow)
+        self.actionInformation.triggered.connect(self.Information)
         self.actionInformation.setObjectName("actionInformation")
         self.menuHelp.addAction(self.actionInformation)
         self.menubar.addAction(self.menuHelp.menuAction())
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-##################################---------Menubar--------##################################
-##################################---------Functions--------##################################
+########################################---------Menubar-------########################################
+########################################---------Functions-----########################################
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Riglsable"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Riglsable "))
         self.pushButton_nmap_1.setText(_translate("MainWindow", "Standart Scan"))
         self.pushButton_nmap_2.setText(_translate("MainWindow", "SYN Scan"))
         self.pushButton_nmap_3.setText(_translate("MainWindow", "Open Ports"))
@@ -350,9 +351,9 @@ class Ui_MainWindow(object):
         self.pushButton_nmap_10.setText(_translate("MainWindow", "IPV6 Scan"))
         self.pushButton_nmap_11.setText(_translate("MainWindow", "Ports Scan"))
         self.pushButton_nmap_12.setText(_translate("MainWindow", "Host Scan"))
-        self.pushButton_nmap_13.setText(_translate("MainWindow", "Buton"))
-        self.pushButton_nmap_14.setText(_translate("MainWindow", "Buton"))
-        self.pushButton_nmap_15.setText(_translate("MainWindow", "Buton"))
+        #self.pushButton_nmap_13.setText(_translate("MainWindow", "Buton"))
+        #self.pushButton_nmap_14.setText(_translate("MainWindow", "Buton"))
+        #self.pushButton_nmap_15.setText(_translate("MainWindow", "Buton"))
         self.pushButton_tools_1.setText(_translate("MainWindow", "Firewall Scan"))
         self.pushButton_tools_2.setText(_translate("MainWindow", "Dos Attack"))
         self.pushButton_tools_3.setText(_translate("MainWindow", "Subdomains"))
@@ -875,9 +876,9 @@ class Ui_MainWindow(object):
             self.plainTextEdit_result.setStyleSheet("color:red;")
             self.plainTextEdit_result.insertPlainText("To stop the attack, close the terminals with ctrl+c .")
             os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
-            os.system("gnome-terminal -x driftnet -i eth0")
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
+            os.system("gnome-terminal --window -x driftnet -i eth0")
             msg = QMessageBox()
             msg.setWindowTitle("Information")
             msg.setBaseSize(300,300)
@@ -911,9 +912,9 @@ class Ui_MainWindow(object):
             self.plainTextEdit_result.setStyleSheet("color:red;")
             self.plainTextEdit_result.insertPlainText("To stop the attack, close the terminals with ctrl+c .")
             os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
-            os.system("gnome-terminal -x urlsnarf -i eth0")
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
+            os.system("gnome-terminal --window -x urlsnarf -i eth0")
             msg = QMessageBox()
             msg.setWindowTitle("Information")
             msg.setBaseSize(300,300)
@@ -953,8 +954,8 @@ class Ui_MainWindow(object):
             msg.setText("Attack initiating,please wait...")
             msg.exec_() 
             os.system("echo 0 > /proc/sys/net/ipv4/ip_forward")
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
-            os.system("gnome-terminal -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_router_ip_address.text(),self.lineEdit_target_ip_address.text()))
+            os.system("gnome-terminal --window -x arpspoof -i eth0 -t {} {} ".format(self.lineEdit_target_ip_address.text(),self.lineEdit_router_ip_address.text()))
             msg1 = QMessageBox()
             msg1.setWindowTitle("Information")
             msg1.setBaseSize(300,300)
@@ -982,7 +983,7 @@ class Ui_MainWindow(object):
         msg.setText("Local network scanning,please wait...")
         msg.setIcon(QMessageBox.Information)
         msg.exec_()
-        os.system("gnome-terminal -x python3 network_scanner.py")
+        os.system("gnome-terminal --window -x python3 network_scanner.py")
         self.plainTextEdit_result.clear()
     def netdiscover(self):
         self.plainTextEdit_result.clear()
@@ -994,7 +995,7 @@ class Ui_MainWindow(object):
         msg.setText("Local network scanning,please wait...")
         msg.setIcon(QMessageBox.Information)
         msg.exec_()
-        os.system("gnome-terminal -x netdiscover -r 192.168.1.0/16")
+        os.system("gnome-terminal --window -x netdiscover -r 192.168.1.0/16")
         self.plainTextEdit_result.clear()
     def nmap_network_scanner(self):
         self.plainTextEdit_result.clear()
@@ -1028,7 +1029,7 @@ class Ui_MainWindow(object):
         msg.setText("Application is started")
         msg.setIcon(QMessageBox.Information)
         msg.exec_()
-        os.system("gnome-terminal -x python3 payload.py")
+        os.system("gnome-terminal --window -x python3 payload.py")
         self.plainTextEdit_result.clear()
     def macchanger_random(self):
         self.plainTextEdit_result.clear()
@@ -1096,7 +1097,7 @@ class Ui_MainWindow(object):
         else:
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Dos Attack is starting,please wait...")
-            os.system("gnome-terminal -x python3 dos.py -s {} -p 80 -t 135".format(self.lineEdit_site.text()))
+            os.system("gnome-terminal --window -x python3 dos.py -s {} -p 80 -t 135".format(self.lineEdit_site.text()))
             msg = QMessageBox()
             msg.setWindowTitle("Information")
             msg.setBaseSize(300,300)
@@ -1104,7 +1105,6 @@ class Ui_MainWindow(object):
             msg.setText("Dos attack is starting...")
             msg.exec_()
             self.plainTextEdit_result.clear()
-            time.sleep(5)
             for i in range(500):
                 self.plainTextEdit_result.setStyleSheet("color:red;")
                 self.plainTextEdit_result.appendPlainText(f"{i}:Denial of service attack, SYN packet send.") 
@@ -1119,7 +1119,7 @@ class Ui_MainWindow(object):
         elif self.lineEdit_site.text()[0]=="1" or self.lineEdit_site.text()[0]=="2" or self.lineEdit_site.text()[0]=="3" or self.lineEdit_site.text()[0]=="4" or self.lineEdit_site.text()[0]== "5" or self.lineEdit_site.text()[0]=="6" or self.lineEdit_site.text()[0]== "7" or self.lineEdit_site.text()[0]== "8" or self.lineEdit_site.text()[0]== "9":
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Searching subdomains,please wait...")
-            os.system("gnome-terminal -x dnsmap {}".format(self.lineEdit_site.text()))
+            os.system("gnome-terminal --window -x dnsmap {}".format(self.lineEdit_site.text()))
             msg2 = QMessageBox()
             msg2.setWindowTitle("Information")
             msg2.setBaseSize(300,300)
@@ -1130,7 +1130,7 @@ class Ui_MainWindow(object):
         else:
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Searching subdomains,please wait...")
-            os.system("gnome-terminal -x dnsmap {}".format(self.lineEdit_site.text()[4:]))
+            os.system("gnome-terminal --window -x dnsmap {}".format(self.lineEdit_site.text()[4:]))
             msg2 = QMessageBox()
             msg2.setWindowTitle("Information")
             msg2.setBaseSize(300,300)
@@ -1149,7 +1149,7 @@ class Ui_MainWindow(object):
         else:
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Searching subdomains,ports,mails,please wait...")
-            os.system("gnome-terminal -x dmitry -winsepfb {}".format(self.lineEdit_site.text()))
+            os.system("gnome-terminal --window -x dmitry -winsepfb {}".format(self.lineEdit_site.text()))
             msg2 = QMessageBox()
             msg2.setWindowTitle("Information")
             msg2.setBaseSize(300,300)
@@ -1168,7 +1168,7 @@ class Ui_MainWindow(object):
         else:
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Searching website folders wait...")
-            os.system("gnome-terminal -x dirb https://{}".format(self.lineEdit_site.text()))
+            os.system("gnome-terminal --window -x dirb https://{}".format(self.lineEdit_site.text()))
             msg2 = QMessageBox()
             msg2.setWindowTitle("Information")
             msg2.setBaseSize(300,300)
@@ -1187,7 +1187,7 @@ class Ui_MainWindow(object):
         else:
             self.plainTextEdit_result.clear()
             self.plainTextEdit_result.insertPlainText("Searching website vulnerability wait...")
-            os.system("gnome-terminal -x nikto -h {}".format(self.lineEdit_site.text()))
+            os.system("gnome-terminal --window -x nikto -h {}".format(self.lineEdit_site.text()))
             msg2 = QMessageBox()
             msg2.setWindowTitle("Information")
             msg2.setBaseSize(300,300)
@@ -1195,14 +1195,30 @@ class Ui_MainWindow(object):
             msg2.setText("Searching website vulnerability wait...")
             msg2.exec_()
             self.plainTextEdit_result.clear()              
-##################################---------Functions--------##################################
+    def Information(self):
+        msg1 = QMessageBox()
+        msg1.setWindowTitle("Information")
+        msg1.setBaseSize(300,300)
+        msg1.setIcon(QMessageBox.Information)
+        msg1.setText("""
+        I am not responsible for your action,This is for educational purposes only.
+	        
+        It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto,dirb.Update 1.2 is coming soon keep waiting...
+        
+        More detailed information about the application can be found at this address: https://github.com/BrktrLawliet/Riglsable
+
+        Distributed under the MIT License. See license for more information.Copyright (c) 2021 BrktrL
+        
+        You can send me application bugs/error at this address: 'brktrl@protonmail.ch' """)
+        msg1.exec_()
+########################################---------Functions-----########################################
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec_()) 
 
 
 
