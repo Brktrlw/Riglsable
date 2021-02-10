@@ -83,14 +83,22 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    sudo git clone https://github.com/Brktrlw/Riglsable
    ```
-2. Login to installed folder
+2. First use this commands
+   ```sh
+   apt-get update
+   ```
+   ```sh
+   apt-get upgrade
+   ```
+3. Login to installed folder
    ```sh
    cd Riglsable
    ```
-3. Install setup.py packages
+4. Install setup.py packages
    ```sh
    sudo python3 setup.py
    ```
+
 
 
 ## Usage
