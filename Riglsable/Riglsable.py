@@ -1460,6 +1460,10 @@ class Ui_MainWindow(object):
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
+    file=open("qss/Diffnes.qss","r")
+    with file:
+        qss=file.read()
+        app.setStyleSheet(qss)
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
