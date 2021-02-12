@@ -53,7 +53,7 @@
 
 
 **It is a graphical interface tool that facilitates the use of many tools such as nmap, nikto, dirb.**<br>
-**Update 1.4 is coming soon keep waiting...**
+**Update 1.6 is coming soon keep waiting...**
 
 `BrktrLawliet`,
 `brktrl@protonmail.ch`
