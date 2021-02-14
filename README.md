@@ -119,7 +119,7 @@ After making the necessary installations, you need to use the following commands
 
 ## Images
 Sample images about the application.
-<img src="images/image1.jpg"></img><br>
+<img src="images/image2.jpg"></img><br>
 
 
 ## License
