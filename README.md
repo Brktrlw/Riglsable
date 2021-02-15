@@ -94,7 +94,11 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    cd Riglsable
    ```
-4. Install setup.py packages
+4. Login to files folder
+   ```sh
+   cd Riglsable_Files
+   ```
+5. Install setup.py packages
    ```sh
    sudo python3 setup.py
    ```
