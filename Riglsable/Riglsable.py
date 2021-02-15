@@ -8,7 +8,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 import socket
-
+import sys
 class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
@@ -108,7 +108,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_result = QtWidgets.QPlainTextEdit(self.centralwidget)
         self.plainTextEdit_result.setGeometry(QtCore.QRect(360, 70, 551, 581))
         self.plainTextEdit_result.setObjectName("plainTextEdit_result")
-        self.plainTextEdit_result.setStyleSheet("border-radius:15px;""font:bold 14px;""border-style:outset;""border-width:5px;""border-color:red;")
+        self.plainTextEdit_result.setStyleSheet("color:white;""border-radius:15px;""font:bold 14px;""border-style:outset;""border-width:5px;""border-color:red;")
         self.plainTextEdit_result.setPlaceholderText("Results")
 
         self.lineEdit_port = QtWidgets.QLineEdit(self.centralwidget)
@@ -341,6 +341,12 @@ class Ui_MainWindow(object):
         self.pushButton_sqlmap.setObjectName("pushButton_sqlmap")
         self.pushButton_sqlmap.clicked.connect(self.sqlmap)
         self.pushButton_sqlmap.setStyleSheet("color : black;")
+
+        self.pushButton_whois = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_whois.setGeometry(QtCore.QRect(230, 410, 96, 35))
+        self.pushButton_whois.setObjectName("pushButton_whois")
+        self.pushButton_whois.clicked.connect(self.whois)
+        self.pushButton_whois.setStyleSheet("color : black;")
 ########################################---------Buttons-------########################################
 ########################################---------Raise---------########################################
         self.label_wallpaper.raise_()
@@ -391,6 +397,7 @@ class Ui_MainWindow(object):
         self.pushButton_free_net.raise_()
         self.pushButton_sniff_url.raise_()
         self.label_macchanger.raise_()
+        self.pushButton_whois.raise_()
         self.label_local_network_scan.raise_()
         self.pushButton_netdiscover.raise_()
         self.pushButton_nmap_scan.raise_()
@@ -436,6 +443,7 @@ class Ui_MainWindow(object):
         self.pushButton_nmap_6.setText(_translate("MainWindow", "OS info Scan"))
         self.pushButton_nmap_7.setText(_translate("MainWindow", "Fast Scan  "))
         self.pushButton_nmap_8.setText(_translate("MainWindow", "All Scan"))
+        self.pushButton_whois.setText(_translate("MainWindow", "Whois"))
         self.pushButton_mac_hand.setText(_translate("MainWindow", "Change Mac"))
         self.pushButton_nmap_9.setText(_translate("MainWindow", "DNS Parsing"))
         self.pushButton_nmap_10.setText(_translate("MainWindow", "IPV6 Scan"))
@@ -466,7 +474,7 @@ class Ui_MainWindow(object):
         self.label_site.setText(_translate("MainWindow", "      Site:"))
         self.label_nmap.setText(_translate("MainWindow", "    Nmap"))
         self.label_tools.setText(_translate("MainWindow", "    Tools"))
-        self.label_result.setText(_translate("MainWindow", "     Result"))
+        self.label_result.setText(_translate("MainWindow", "    Result"))
         self.label_router_ip_address.setText(_translate("MainWindow", "Router IP Address :"))
         self.label_target_ip_address.setText(_translate("MainWindow", "Target IP Address :"))
         self.label_macchanger.setText(_translate("MainWindow", "   Macchanger"))
@@ -1459,7 +1467,7 @@ class Ui_MainWindow(object):
                     self.plainTextEdit_result.clear()
                     self.plainTextEdit_result.setStyleSheet("color:white;")
                     self.plainTextEdit_result.insertPlainText("Changing mac address,please wait...")
-                    os.system("macchanger -r {}".format(self.combobox.currentText()))
+                    os.system("macchanger -r {} > output.txt".format(self.combobox.currentText()))
                     os.system("ifconfig {} down".format(self.combobox.currentText()))
                     time.sleep(1)
                     os.system("ifconfig {} up".format(self.combobox.currentText()))
@@ -1470,6 +1478,10 @@ class Ui_MainWindow(object):
                     msg.setText("Mac address changed successfully (RANDOM MAC ADDRESS)")
                     msg.exec_()
                     self.plainTextEdit_result.clear()
+                    with open("output.txt","r+") as file:
+                        info=file.read()
+                        self.plainTextEdit_result.clear()
+                        self.plainTextEdit_result.insertPlainText(info)
                 elif reply==QMessageBox.No:
                     msg1 = QMessageBox()
                     msg1.setWindowTitle("Warning")
@@ -1502,7 +1514,7 @@ class Ui_MainWindow(object):
                     self.plainTextEdit_result.clear()
                     self.plainTextEdit_result.setStyleSheet("color:white;")
                     self.plainTextEdit_result.insertPlainText("Changing mac address,please wait...")
-                    os.system("macchanger -p {}".format(self.combobox.currentText()))
+                    os.system("macchanger -p {} > output.txt".format(self.combobox.currentText()))
                     os.system("ifconfig {} down".format(self.combobox.currentText()))
                     time.sleep(1)
                     os.system("ifconfig {} up".format(self.combobox.currentText()))
@@ -1513,6 +1525,10 @@ class Ui_MainWindow(object):
                     msg.setText("Mac address changed successfully (Original MAC ADDRESS)")
                     msg.exec_()
                     self.plainTextEdit_result.clear()
+                    with open("output.txt","r+") as file:
+                        info=file.read()
+                        self.plainTextEdit_result.clear()
+                        self.plainTextEdit_result.insertPlainText(info)
                 elif reply==QMessageBox.No:
                     msg1 = QMessageBox()
                     msg1.setWindowTitle("Warning")
@@ -1552,7 +1568,7 @@ class Ui_MainWindow(object):
                     self.plainTextEdit_result.clear()
                     self.plainTextEdit_result.setStyleSheet("color:white;")
                     self.plainTextEdit_result.insertPlainText("Changing mac address,please wait...")
-                    os.system("macchanger -m {} {}".format(self.lineEdit_mac.text(),self.combobox.currentText()))
+                    os.system("macchanger -m {} {} > output.txt".format(self.lineEdit_mac.text(),self.combobox.currentText()))
                     os.system("ifconfig {} down".format(self.combobox.currentText()))
                     time.sleep(1)
                     os.system("ifconfig {} up".format(self.combobox.currentText()))
@@ -1560,10 +1576,14 @@ class Ui_MainWindow(object):
                     msg.setWindowTitle("Information")
                     msg.setBaseSize(300,300)
                     msg.setIcon(QMessageBox.Information)
-                    msg.setText("Mac address changed successfully (Original MAC ADDRESS)")
+                    msg.setText("Mac address changed successfully")
                     msg.exec_()
                     self.plainTextEdit_result.clear()
                     self.lineEdit_mac.clear()
+                    with open("output.txt","r+") as file:
+                        info=file.read()
+                        self.plainTextEdit_result.clear()
+                        self.plainTextEdit_result.insertPlainText(info)
                 elif reply==QMessageBox.No:
                     msg1 = QMessageBox()
                     msg1.setWindowTitle("Warning")
@@ -1929,6 +1949,91 @@ class Ui_MainWindow(object):
                     msg6.setIcon(QMessageBox.Critical)
                     msg6.setText("Sqlmap could not be started")
                     msg6.exec_()
+        except:
+            msg1 = QMessageBox()
+            msg1.setWindowTitle("Warning")
+            msg1.setBaseSize(300,300)
+            msg1.setIcon(QMessageBox.Critical)
+            msg1.setText("Error,something went wrong.Please Try Again")
+            msg1.exec_()
+    def whois(self):
+        try:
+            check=self.lineEdit_site.text().startswith("www.")
+            if self.lineEdit_site.text()=="":
+                msg5 = QMessageBox()
+                msg5.setWindowTitle("Information")
+                msg5.setBaseSize(300,300)
+                msg5.setIcon(QMessageBox.Warning)
+                msg5.setText("Please enter the site adress or IP adress!")
+                msg5.exec_()
+            elif self.lineEdit_site.text().startswith("http://"):
+                msg1 = QMessageBox()
+                msg1.setWindowTitle("Warning")
+                msg1.setBaseSize(300,300)
+                msg1.setIcon(QMessageBox.Information)
+                msg1.setText("Whois lookup loading,please wait.")
+                msg1.exec_()
+                self.url=self.lineEdit_site.text()[7:]
+                self.ip_adress=socket.gethostbyname(self.url)
+                os.system("whois {} > output.txt".format(self.ip_adress))
+                with open("output.txt","r+") as file:
+                    info=file.read()
+                    self.plainTextEdit_result.clear()
+                    self.plainTextEdit_result.insertPlainText(info)
+            elif self.lineEdit_site.text().startswith("https://"):
+                msg1 = QMessageBox()
+                msg1.setWindowTitle("Warning")
+                msg1.setBaseSize(300,300)
+                msg1.setIcon(QMessageBox.Information)
+                msg1.setText("Whois lookup loading,please wait.")
+                msg1.exec_()
+                self.url=self.lineEdit_site.text()[8:]
+                self.ip_adress=socket.gethostbyname(self.url)
+                os.system("whois {}".format(self.ip_adress))
+                with open("output.txt","r+") as file:
+                    info=file.read()
+                    self.plainTextEdit_result.clear()
+                    self.plainTextEdit_result.insertPlainText(info)
+            elif self.lineEdit_site.text().startswith("www."):
+                msg1 = QMessageBox()
+                msg1.setWindowTitle("Warning")
+                msg1.setBaseSize(300,300)
+                msg1.setIcon(QMessageBox.Information)
+                msg1.setText("Whois lookup loading,please wait.")
+                msg1.exec_()
+                self.url=self.lineEdit_site.text()
+                self.ip_adress=socket.gethostbyname(self.url)
+                os.system("whois {} > output.txt".format(self.ip_adress))
+                with open("output.txt","r+") as file:
+                    info=file.read()
+                    self.plainTextEdit_result.clear()
+                    self.plainTextEdit_result.insertPlainText(info)
+            elif check==False:
+                msg1 = QMessageBox()
+                msg1.setWindowTitle("Warning")
+                msg1.setBaseSize(300,300)
+                msg1.setIcon(QMessageBox.Information)
+                msg1.setText("Whois lookup loading,please wait.")
+                msg1.exec_()
+                self.url="www."+self.lineEdit_site.text()
+                self.ip_adress=socket.gethostbyname(self.url)
+                os.system("whois {} > output.txt".format(self.ip_adress))
+                with open("output.txt","r+") as file:
+                    info=file.read()
+                    self.plainTextEdit_result.clear()
+                    self.plainTextEdit_result.insertPlainText(info)
+            else:
+                msg1 = QMessageBox()
+                msg1.setWindowTitle("Warning")
+                msg1.setBaseSize(300,300)
+                msg1.setIcon(QMessageBox.Information)
+                msg1.setText("Whois lookup loading,please wait.")
+                msg1.exec_()
+                os.system("whois {} > output.txt".format(self.lineEdit_site.text()))
+                with open("output.txt","r+") as file:
+                    info=file.read()
+                    self.plainTextEdit_result.clear()
+                    self.plainTextEdit_result.insertPlainText(info)     
         except:
             msg1 = QMessageBox()
             msg1.setWindowTitle("Warning")
