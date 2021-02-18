@@ -17,7 +17,8 @@
     <p align="center"><address>
       <div align="center">
     <a href="mailto:brktrl@protonmail.ch">Report Bug</a>
-    <a href="https://riglsable.wixsite.com/riglsable">Web Site</a>
+    <br>
+    <a href="https://riglsable.wixsite.com/riglsable" target="_blank">Web Site</a>
     </div>
     </address>
     </p>
