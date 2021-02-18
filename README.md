@@ -124,7 +124,7 @@ After making the necessary installations, you need to use the following commands
 ## Images
 Sample images about the application.
 <img src="Riglsable_Files/images/image2.jpeg"></img><br>
-<img src=".git/image1.jpeg"></img><br>
+<img src="Riglsable_Files/images/image1.jpeg"></img><br>
 <img src="Riglsable_Files/images/image3.jpeg"></img><br>
 ## License
 
