@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Brktrlw/Riglsable">
-    <img src="images/logo1.png" alt="Logo" width="140" height="140">
+    <img src="Riglsable_Files/images/logo1.png" alt="Logo" width="140" height="140">
   </a>
 
   <h3 align="center">Riglsable v1.4 beta</h3>
@@ -123,9 +123,9 @@ After making the necessary installations, you need to use the following commands
 
 ## Images
 Sample images about the application.
-<img src="images/image2.jpg"></img><br>
-
-
+<img src="Riglsable_Files/images/image2.jpg"></img><br>
+<img src=".git/image1.jpg"></img><br>
+<img src="Riglsable_Files/images/image3.jpg"></img><br>
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.<br>

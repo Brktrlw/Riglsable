@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from PyQt5 import QtCore, QtGui, QtWidgets 
+from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 import os
 import time
@@ -9,8 +9,9 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 import socket
 import sys
-class Ui_MainWindow(object):
 
+
+class Ui_MainWindow(QMainWindow):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1600, 730)
@@ -23,7 +24,7 @@ class Ui_MainWindow(object):
         self.label_wallpaper = QtWidgets.QLabel(self.centralwidget)
         self.label_wallpaper.setGeometry(QtCore.QRect(0, 0, 1611, 681))
         self.label_wallpaper.setText("")
-        self.label_wallpaper.setPixmap(QtGui.QPixmap("wallpaper.jpg"))
+        self.label_wallpaper.setPixmap(QtGui.QPixmap("images/wallpaper.jpg"))
         self.label_wallpaper.setObjectName("label_wallpaper")
 
         self.label_site = QtWidgets.QLabel(self.centralwidget)
@@ -51,20 +52,7 @@ class Ui_MainWindow(object):
         self.label_result.setObjectName("label_result")
         self.label_result.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
 
-        self.label_router_ip_address = QtWidgets.QLabel(self.centralwidget)
-        self.label_router_ip_address.setGeometry(QtCore.QRect(940, 131, 140, 31))
-        self.label_router_ip_address.setObjectName("label_router_ip_address")
-        self.label_router_ip_address.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
-        self.label_target_ip_address = QtWidgets.QLabel(self.centralwidget)
-        self.label_target_ip_address.setGeometry(QtCore.QRect(940, 170, 140, 31))
-        self.label_target_ip_address.setObjectName("label_target_ip_address")
-        self.label_target_ip_address.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
-        self.label_macchanger = QtWidgets.QLabel(self.centralwidget)
-        self.label_macchanger.setGeometry(QtCore.QRect(950, 290, 100, 31))
-        self.label_macchanger.setObjectName("label_macchanger")
-        self.label_macchanger.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+        
 
         self.label_local_network_scan = QtWidgets.QLabel(self.centralwidget)
         self.label_local_network_scan.setGeometry(QtCore.QRect(940, 80, 140, 31))
@@ -72,7 +60,7 @@ class Ui_MainWindow(object):
         self.label_local_network_scan.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
 
         self.label_payload = QtWidgets.QLabel(self.centralwidget)
-        self.label_payload.setGeometry(QtCore.QRect(950, 330, 100, 31))
+        self.label_payload.setGeometry(QtCore.QRect(950, 300, 100, 31))
         self.label_payload.setObjectName("label_payload")
         self.label_payload.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
 
@@ -85,20 +73,14 @@ class Ui_MainWindow(object):
         self.label_mac.setGeometry(QtCore.QRect(950, 250, 100, 31))
         self.label_mac.setObjectName("label_mac")
         self.label_mac.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.label_arp = QtWidgets.QLabel(self.centralwidget)
+        self.label_arp.setGeometry(QtCore.QRect(950, 200, 100, 31))
+        self.label_arp.setObjectName("label_arp")
+        self.label_arp.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")       
 ########################################---------LABELS--------########################################
 ########################################---------Line Edits----########################################
-        self.lineEdit_router_ip_address = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_router_ip_address.setGeometry(QtCore.QRect(1090, 130, 131, 33))
-        self.lineEdit_router_ip_address.setObjectName("lineEdit_router_ip_address")
-        self.lineEdit_router_ip_address.setPlaceholderText(" Router IP ")
-        self.lineEdit_router_ip_address.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
-        self.lineEdit_target_ip_address = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_target_ip_address.setGeometry(QtCore.QRect(1090, 170, 131, 33))
-        self.lineEdit_target_ip_address.setObjectName("lineEdit_target_ip_address")
-        self.lineEdit_target_ip_address.setPlaceholderText(" Target IP ")
-        self.lineEdit_target_ip_address.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
+        
         self.lineEdit_site = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_site.setGeometry(QtCore.QRect(100, 20, 221, 33))
         self.lineEdit_site.setObjectName("lineEdit_site")
@@ -121,13 +103,7 @@ class Ui_MainWindow(object):
         self.lineEdit_router.setGeometry(QtCore.QRect(1090, 30, 131, 33))
         self.lineEdit_router.setObjectName("lineEdit_router")
         self.lineEdit_router.setPlaceholderText("Local Router IP ")
-        self.lineEdit_router.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
-        self.lineEdit_mac = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_mac.setGeometry(QtCore.QRect(1060, 248, 131, 33))
-        self.lineEdit_mac.setObjectName("lineEdit_mac")
-        self.lineEdit_mac.setPlaceholderText("00:0B:DB:82:58:C3")
-        self.lineEdit_mac.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+        self.lineEdit_router.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")      
 ########################################---------Line Edits----########################################
 ########################################---------Buttons-------########################################
         self.pushButton_nmap_1 = QtWidgets.QPushButton(self.centralwidget)
@@ -268,29 +244,7 @@ class Ui_MainWindow(object):
         self.pushButton_clear.clicked.connect(self.clear)
         self.pushButton_clear.setStyleSheet("color : black;")
 
-        self.pushButton_sniff_image = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_sniff_image.setGeometry(QtCore.QRect(1370, 130, 131, 35))
-        self.pushButton_sniff_image.setObjectName("pushButton_sniff_image")
-        self.pushButton_sniff_image.clicked.connect(self.sniff_image)
-        self.pushButton_sniff_image.setStyleSheet("color : black;")
-
-        self.pushButton_sniff_url = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_sniff_url.setGeometry(QtCore.QRect(1230, 130, 131, 35))
-        self.pushButton_sniff_url.setObjectName("pushButton_sniff_url")
-        self.pushButton_sniff_url.clicked.connect(self.sniff_url)
-        self.pushButton_sniff_url.setStyleSheet("color : black;")
-
-        self.pushButton_block_net = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_block_net.setGeometry(QtCore.QRect(1230, 170, 131, 35))
-        self.pushButton_block_net.setObjectName("pushButton_block_net")
-        self.pushButton_block_net.clicked.connect(self.block_net)
-        self.pushButton_block_net.setStyleSheet("color : black;")
-
-        self.pushButton_free_net = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_free_net.setGeometry(QtCore.QRect(1370, 170, 131, 35))
-        self.pushButton_free_net.setObjectName("pushButton_free_net")
-        self.pushButton_free_net.clicked.connect(self.free_net)
-        self.pushButton_free_net.setStyleSheet("color : black;")
+        
 
         self.pushButton_netdiscover = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_netdiscover.setGeometry(QtCore.QRect(1090, 80, 131, 35))
@@ -304,37 +258,11 @@ class Ui_MainWindow(object):
         self.pushButton_nmap_scan.clicked.connect(self.nmap_network_scanner)
         self.pushButton_nmap_scan.setStyleSheet("color : black;")
 
-        self.pushButton_macchanger_random = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_macchanger_random.setGeometry(QtCore.QRect(1060, 290, 131, 35))
-        self.pushButton_macchanger_random.setObjectName("pushButton_macchanger_random")
-        self.pushButton_macchanger_random.clicked.connect(self.macchanger_random)
-        self.pushButton_macchanger_random.setStyleSheet("color : black;")
-
-        self.pushButton_macchanger_original = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_macchanger_original.setGeometry(QtCore.QRect(1200, 290, 131, 35))
-        self.pushButton_macchanger_original.setObjectName("pushButton_macchanger_original")
-        self.pushButton_macchanger_original.clicked.connect(self.macchanger_original)
-        self.pushButton_macchanger_original.setStyleSheet("color : black;")
-
         self.pushButton_payload = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_payload.setGeometry(QtCore.QRect(1060, 330, 131, 35))
+        self.pushButton_payload.setGeometry(QtCore.QRect(1060, 300, 131, 35))
         self.pushButton_payload.setObjectName("pushButton_payload")
         self.pushButton_payload.clicked.connect(self.payload)
         self.pushButton_payload.setStyleSheet("color : black;")
-
-        self.combobox=QtWidgets.QComboBox(self.centralwidget)
-        self.combobox.setObjectName("eth0combo")
-        self.combobox.setGeometry(QRect(1340, 290, 96, 35))
-        self.combobox.addItem("Interface")
-        self.combobox.addItem("eth0")
-        self.combobox.addItem("wlan0")
-        self.combobox.setStyleSheet("color : black;")  
-
-        self.pushButton_mac_hand = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_mac_hand.setGeometry(QtCore.QRect(1200, 250, 131, 35))
-        self.pushButton_mac_hand.setObjectName("pushButton_mac_hand")
-        self.pushButton_mac_hand.clicked.connect(self.hand_mac)
-        self.pushButton_mac_hand.setStyleSheet("color : black;")
 
         self.pushButton_sqlmap = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_sqlmap.setGeometry(QtCore.QRect(130, 410, 96, 35))
@@ -347,20 +275,32 @@ class Ui_MainWindow(object):
         self.pushButton_whois.setObjectName("pushButton_whois")
         self.pushButton_whois.clicked.connect(self.whois)
         self.pushButton_whois.setStyleSheet("color : black;")
+
+        self.pushButton_Mac_Changer = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_Mac_Changer.setGeometry(QtCore.QRect(1060, 250, 131, 35))
+        self.pushButton_Mac_Changer.setObjectName("pushButton_Mac_Changer")
+        self.pushButton_Mac_Changer.clicked.connect(self.macc_address_change_main)
+        self.pushButton_Mac_Changer.setStyleSheet("color : black;")
+
+        self.pushButton_arp_spoofing = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_arp_spoofing.setGeometry(QtCore.QRect(1060, 200, 131, 35))
+        self.pushButton_arp_spoofing.setObjectName("pushButton_arp_spoofing")
+        self.pushButton_arp_spoofing.clicked.connect(self.arp_spoofing)
+        self.pushButton_arp_spoofing.setStyleSheet("color : black;")
 ########################################---------Buttons-------########################################
-########################################---------Raise---------########################################
+########################################---------Raise---------########################################d
         self.label_wallpaper.raise_()
         self.label_mac.raise_()
         self.pushButton_sqlmap.raise_()
-        self.lineEdit_mac.raise_()
         self.label_localip.raise_()
-        self.pushButton_mac_hand.raise_()
         self.lineEdit_router.raise_()
         self.pushButton_tools_7.raise_()
         self.lineEdit_site.raise_()
         self.label_port.raise_()
+        self.pushButton_arp_spoofing.raise_()
+        self.pushButton_Mac_Changer.raise_()
         self.label_site.raise_()
-        self.combobox.raise_()
+        self.label_arp.raise_()
         self.pushButton_nmap_1.raise_()
         self.pushButton_nmap_2.raise_()
         self.pushButton_nmap_4.raise_()
@@ -388,21 +328,10 @@ class Ui_MainWindow(object):
         self.plainTextEdit_result.raise_()
         self.label_result.raise_()
         self.pushButton_clear.raise_()
-        self.label_router_ip_address.raise_()
-        self.label_target_ip_address.raise_()
-        self.lineEdit_router_ip_address.raise_()
-        self.lineEdit_target_ip_address.raise_()
-        self.pushButton_sniff_image.raise_()
-        self.pushButton_block_net.raise_()
-        self.pushButton_free_net.raise_()
-        self.pushButton_sniff_url.raise_()
-        self.label_macchanger.raise_()
         self.pushButton_whois.raise_()
         self.label_local_network_scan.raise_()
         self.pushButton_netdiscover.raise_()
         self.pushButton_nmap_scan.raise_()
-        self.pushButton_macchanger_random.raise_()
-        self.pushButton_macchanger_original.raise_()
         self.label_payload.raise_()
         self.pushButton_payload.raise_()
 ########################################---------Raise---------########################################
@@ -437,17 +366,19 @@ class Ui_MainWindow(object):
         self.label_localip.setText(_translate("MainWindow", "Local Router IP :"))
         self.pushButton_nmap_2.setText(_translate("MainWindow", "SYN Scan"))
         self.pushButton_nmap_3.setText(_translate("MainWindow", "Open Ports"))
-        self.label_mac.setText(_translate("MainWindow", "Mac Address:"))
+        self.label_mac.setText(_translate("MainWindow", "Mac Changer:"))
+        self.pushButton_arp_spoofing.setText(_translate("MainWindow", "Arp Spoof"))
         self.pushButton_nmap_4.setText(_translate("MainWindow", "All Port Scan"))
         self.pushButton_nmap_5.setText(_translate("MainWindow", "Version Scan"))
         self.pushButton_nmap_6.setText(_translate("MainWindow", "OS info Scan"))
         self.pushButton_nmap_7.setText(_translate("MainWindow", "Fast Scan  "))
         self.pushButton_nmap_8.setText(_translate("MainWindow", "All Scan"))
         self.pushButton_whois.setText(_translate("MainWindow", "Whois"))
-        self.pushButton_mac_hand.setText(_translate("MainWindow", "Change Mac"))
+        self.pushButton_Mac_Changer.setText(_translate("MainWindow", "Mac Changer"))
         self.pushButton_nmap_9.setText(_translate("MainWindow", "DNS Parsing"))
         self.pushButton_nmap_10.setText(_translate("MainWindow", "IPV6 Scan"))
         self.pushButton_sqlmap.setText(_translate("MainWindow", "Sqlmap"))
+        self.label_arp.setText(_translate("MainWindow", "Arp-Spoofing"))
         self.pushButton_nmap_11.setText(_translate("MainWindow", "Ports Scan"))
         self.pushButton_nmap_12.setText(_translate("MainWindow", "Host Scan"))
         self.pushButton_nmap_13.setText(_translate("MainWindow", "FIN Scan"))
@@ -461,23 +392,14 @@ class Ui_MainWindow(object):
         self.pushButton_tools_5.setText(_translate("MainWindow", "Dirb"))
         self.pushButton_tools_6.setText(_translate("MainWindow", "Nikto"))
         self.pushButton_clear.setText(_translate("MainWindow", "Clear"))
-        self.pushButton_sniff_image.setText(_translate("MainWindow", "Sniff Image"))
-        self.pushButton_block_net.setText(_translate("MainWindow", "Block from NET"))
-        self.pushButton_free_net.setText(_translate("MainWindow", "Free from NET"))
-        self.pushButton_sniff_url.setText(_translate("MainWindow", "Sniff URL"))
         self.pushButton_netdiscover.setText(_translate("MainWindow", "Netdiscover"))
         self.pushButton_nmap_scan.setText(_translate("MainWindow", "Nmap Scan"))
-        self.pushButton_macchanger_random.setText(_translate("MainWindow", "Random MAC"))
-        self.pushButton_macchanger_original.setText(_translate("MainWindow", "Original MAC"))
         self.pushButton_payload.setText(_translate("MainWindow", "Trojan"))
         self.label_port.setText(_translate("MainWindow", "Ports:"))
         self.label_site.setText(_translate("MainWindow", "      Site:"))
         self.label_nmap.setText(_translate("MainWindow", "    Nmap"))
         self.label_tools.setText(_translate("MainWindow", "    Tools"))
         self.label_result.setText(_translate("MainWindow", "    Result"))
-        self.label_router_ip_address.setText(_translate("MainWindow", "Router IP Address :"))
-        self.label_target_ip_address.setText(_translate("MainWindow", "Target IP Address :"))
-        self.label_macchanger.setText(_translate("MainWindow", "   Macchanger"))
         self.label_local_network_scan.setText(_translate("MainWindow", "Local Network Scan"))
         self.label_payload.setText(_translate("MainWindow", "        Payload"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
@@ -1877,6 +1799,7 @@ class Ui_MainWindow(object):
                 msg5.setText("Please enter the site adress!")
                 msg5.exec_()
             elif self.lineEdit_site.text().startswith("http://"):
+                self.plainTextEdit_result.clear()
                 self.url=self.lineEdit_site.text()[7:]
                 self.ip_adress=socket.gethostbyname(self.url)
                 msg5 = QMessageBox()
@@ -1889,6 +1812,7 @@ class Ui_MainWindow(object):
                 msg5.exec_()
                 self.plainTextEdit_result.insertPlainText("""Website  : {}\nIP Addres: {}""".format(self.url,self.ip_adress))
             elif self.lineEdit_site.text().startswith("https://"):
+                self.plainTextEdit_result.clear()
                 self.url=self.lineEdit_site.text()[8:]
                 self.ip_adress=socket.gethostbyname(self.url)
                 msg5 = QMessageBox()
@@ -1901,6 +1825,7 @@ class Ui_MainWindow(object):
                 msg5.exec_()
                 self.plainTextEdit_result.insertPlainText("""Website  : {}\nIP Addres: {}""".format(self.url,self.ip_adress))
             else:
+                self.plainTextEdit_result.clear()
                 self.url=self.lineEdit_site.text()
                 self.ip_adress=socket.gethostbyname(self.url)
                 msg5 = QMessageBox()
@@ -2041,6 +1966,135 @@ class Ui_MainWindow(object):
             msg1.setIcon(QMessageBox.Critical)
             msg1.setText("Error,something went wrong.Please Try Again")
             msg1.exec_()
+    def macc_address_change_main(self):
+        mydialog=QDialog(self)
+        mydialog.setGeometry(600,300,530,500)
+        mydialog.setMaximumSize(530,500)
+        mydialog.setMinimumSize(530,500)
+        
+        self.label_wallpaper_dialog = QtWidgets.QLabel(mydialog)
+        self.label_wallpaper_dialog.setGeometry(QtCore.QRect(0, 0, 530, 500))
+        self.label_wallpaper_dialog.setText("")
+        self.label_wallpaper_dialog.setPixmap(QtGui.QPixmap("images/mac_changer_530x500.jpg"))
+        self.label_wallpaper_dialog.setObjectName("label_wallpaper_dialog")
+
+        self.label_macc = QtWidgets.QLabel(mydialog)
+        self.label_macc.setGeometry(QtCore.QRect(120, 40, 300, 100))
+        self.label_macc.setObjectName("label_macc")
+        self.label_macc.setStyleSheet("color : white;""border-radius:10px;""font:bold 40px;""border-style:outset;""border-width:5px;""border-color:blue;")
+        self.label_macc.setText("   Mac Changer")
+
+        self.pushButton_macchanger_random = QtWidgets.QPushButton(mydialog)
+        self.pushButton_macchanger_random.setGeometry(50,250,145,35)
+        self.pushButton_macchanger_random.setObjectName("pushButton_macchanger_random")
+        self.pushButton_macchanger_random.setText("Random Mac")
+        self.pushButton_macchanger_random.clicked.connect(self.macchanger_random)
+        self.pushButton_macchanger_random.setStyleSheet("color : black;")
+
+        self.pushButton_macchanger_original = QtWidgets.QPushButton(mydialog)
+        self.pushButton_macchanger_original.setGeometry(220,250,145,35)
+        self.pushButton_macchanger_original.setText("Original Mac")
+        self.pushButton_macchanger_original.setObjectName("pushButton_macchanger_original")
+        self.pushButton_macchanger_original.clicked.connect(self.macchanger_original)
+        self.pushButton_macchanger_original.setStyleSheet("color : black;")
+
+        self.pushButton_mac_hand = QtWidgets.QPushButton(mydialog)
+        self.pushButton_mac_hand.setGeometry(QtCore.QRect(220, 202, 145, 35))
+        self.pushButton_mac_hand.setObjectName("pushButton_mac_hand")
+        self.pushButton_mac_hand.setText("Change Mac")
+        self.pushButton_mac_hand.clicked.connect(self.hand_mac)
+        self.pushButton_mac_hand.setStyleSheet("color : black;")
+
+        self.combobox=QtWidgets.QComboBox(mydialog)
+        self.combobox.setObjectName("eth0combo")
+        self.combobox.setGeometry(375,223,100,35)
+        self.combobox.addItem("Interface")
+        self.combobox.addItem("eth0")
+        self.combobox.addItem("wlan0")
+        self.combobox.setStyleSheet("color : black;")  
+
+        self.lineEdit_mac = QtWidgets.QLineEdit(mydialog)
+        self.lineEdit_mac.setGeometry(QtCore.QRect(50, 200, 150, 40))
+        self.lineEdit_mac.setObjectName("lineEdit_mac")
+        self.lineEdit_mac.setPlaceholderText("00:0B:DB:82:58:C3")
+        self.lineEdit_mac.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.label_macchanger = QtWidgets.QLabel(mydialog)
+        self.label_macchanger.setGeometry(QtCore.QRect(950, 290, 100, 31))
+        self.label_macchanger.setObjectName("label_macchanger")
+        self.label_macchanger.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+        self.label_macchanger.setText("Mac")
+        mydialog.show()
+    def arp_spoofing(self):
+        mydialog1=QDialog(self)
+        mydialog1.setGeometry(500,300,690,450)
+        mydialog1.setMaximumSize(690,450)
+        mydialog1.setMinimumSize(690,450)
+
+        self.label_wallpaper_dialog1 = QtWidgets.QLabel(mydialog1)
+        self.label_wallpaper_dialog1.setGeometry(QtCore.QRect(0, 0, 690, 450))
+        self.label_wallpaper_dialog1.setText("")
+        self.label_wallpaper_dialog1.setPixmap(QtGui.QPixmap("images/arpspoof.png"))
+        self.label_wallpaper_dialog1.setObjectName("label_wallpaper_dialog1")
+
+        self.label_arp_spoof = QtWidgets.QLabel(mydialog1)
+        self.label_arp_spoof.setGeometry(QtCore.QRect(190, 20, 300, 100))
+        self.label_arp_spoof.setObjectName("label_arp_spoof")
+        self.label_arp_spoof.setStyleSheet("color : white;""border-radius:10px;""font:bold 40px;""border-style:outset;""border-width:7px;""border-color:blue;")
+        self.label_arp_spoof.setText("    Arp-Spoof")
+
+        self.label_router_ip_address = QtWidgets.QLabel(mydialog1)
+        self.label_router_ip_address.setGeometry(QtCore.QRect(50, 180, 140, 31))
+        self.label_router_ip_address.setObjectName("label_router_ip_address")
+        self.label_router_ip_address.setText(" Router IP Address :")
+        self.label_router_ip_address.setStyleSheet("color : white;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.label_target_ip_address = QtWidgets.QLabel(mydialog1)
+        self.label_target_ip_address.setGeometry(QtCore.QRect(50, 250, 140, 31))
+        self.label_target_ip_address.setObjectName("label_target_ip_address")
+        self.label_target_ip_address.setText(" Target IP Address :")
+        self.label_target_ip_address.setStyleSheet("color : white;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.lineEdit_router_ip_address = QtWidgets.QLineEdit(mydialog1)
+        self.lineEdit_router_ip_address.setGeometry(QtCore.QRect(210, 180, 131, 33))
+        self.lineEdit_router_ip_address.setObjectName("lineEdit_router_ip_address")
+        self.lineEdit_router_ip_address.setPlaceholderText(" Router IP ")
+        self.lineEdit_router_ip_address.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.lineEdit_target_ip_address = QtWidgets.QLineEdit(mydialog1)
+        self.lineEdit_target_ip_address.setGeometry(QtCore.QRect(210, 250, 131, 33))
+        self.lineEdit_target_ip_address.setObjectName("lineEdit_target_ip_address")
+        self.lineEdit_target_ip_address.setPlaceholderText(" Target IP ")
+        self.lineEdit_target_ip_address.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
+
+        self.pushButton_sniff_image = QtWidgets.QPushButton(mydialog1)
+        self.pushButton_sniff_image.setGeometry(QtCore.QRect(500, 180, 131, 35))
+        self.pushButton_sniff_image.setObjectName("pushButton_sniff_image")
+        self.pushButton_sniff_image.setText("Sniff Image")
+        self.pushButton_sniff_image.clicked.connect(self.sniff_image)
+        self.pushButton_sniff_image.setStyleSheet("color : black;")
+
+        self.pushButton_sniff_url = QtWidgets.QPushButton(mydialog1)
+        self.pushButton_sniff_url.setGeometry(QtCore.QRect(360, 250, 131, 35))
+        self.pushButton_sniff_url.setObjectName("pushButton_sniff_url")
+        self.pushButton_sniff_url.setText("Sniff Url")
+        self.pushButton_sniff_url.clicked.connect(self.sniff_url)
+        self.pushButton_sniff_url.setStyleSheet("color : black;")
+
+        self.pushButton_block_net = QtWidgets.QPushButton(mydialog1)
+        self.pushButton_block_net.setGeometry(QtCore.QRect(360, 180, 131, 35))
+        self.pushButton_block_net.setObjectName("pushButton_block_net")
+        self.pushButton_block_net.setText("Block NET")
+        self.pushButton_block_net.clicked.connect(self.block_net)
+        self.pushButton_block_net.setStyleSheet("color : black;")
+
+        self.pushButton_free_net = QtWidgets.QPushButton(mydialog1)
+        self.pushButton_free_net.setGeometry(QtCore.QRect(500, 250, 131, 35))
+        self.pushButton_free_net.setObjectName("pushButton_free_net")
+        self.pushButton_free_net.setText("Free NET")
+        self.pushButton_free_net.clicked.connect(self.free_net)
+        self.pushButton_free_net.setStyleSheet("color : black;")
+        mydialog1.show()
 ########################################---------Functions-----########################################
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
