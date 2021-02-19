@@ -51,9 +51,7 @@ class Ui_MainWindow(QMainWindow):
         self.label_result.setGeometry(QtCore.QRect(600, 35, 80, 35))
         self.label_result.setObjectName("label_result")
         self.label_result.setStyleSheet("color : black;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
-
         
-
         self.label_local_network_scan = QtWidgets.QLabel(self.centralwidget)
         self.label_local_network_scan.setGeometry(QtCore.QRect(940, 80, 140, 31))
         self.label_local_network_scan.setObjectName("label_local_network_scan")
@@ -110,183 +108,181 @@ class Ui_MainWindow(QMainWindow):
         self.pushButton_nmap_1.setGeometry(QtCore.QRect(30, 90, 96, 35))
         self.pushButton_nmap_1.setObjectName("pushButton_nmap_1")
         self.pushButton_nmap_1.clicked.connect(self.nmap_1)
-        self.pushButton_nmap_1.setStyleSheet("color : black;")
+        self.pushButton_nmap_1.setStyleSheet("color : black;""font:bold;")
     
         self.pushButton_nmap_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_2.setGeometry(QtCore.QRect(130, 90, 96, 35))
         self.pushButton_nmap_2.setObjectName("pushButton_nmap_2")
         self.pushButton_nmap_2.clicked.connect(self.nmap_2)
-        self.pushButton_nmap_2.setStyleSheet("color : black;")
+        self.pushButton_nmap_2.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_3.setGeometry(QtCore.QRect(230, 90, 96, 35))
         self.pushButton_nmap_3.setObjectName("pushButton_nmap_3")
         self.pushButton_nmap_3.clicked.connect(self.nmap_3)
-        self.pushButton_nmap_3.setStyleSheet("color : black;")
+        self.pushButton_nmap_3.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_4.setGeometry(QtCore.QRect(30, 130, 96, 35))
         self.pushButton_nmap_4.setObjectName("pushButton_nmap_4")
         self.pushButton_nmap_4.clicked.connect(self.nmap_4)
-        self.pushButton_nmap_4.setStyleSheet("color : black;")
+        self.pushButton_nmap_4.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_5 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_5.setGeometry(QtCore.QRect(130, 130, 96, 35))
         self.pushButton_nmap_5.setObjectName("pushButton_nmap_5")
         self.pushButton_nmap_5.clicked.connect(self.nmap_5)
-        self.pushButton_nmap_5.setStyleSheet("color : black;")
+        self.pushButton_nmap_5.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_6.setGeometry(QtCore.QRect(230, 130, 96, 35))
         self.pushButton_nmap_6.setObjectName("pushButton_nmap_6")
         self.pushButton_nmap_6.clicked.connect(self.nmap_6)
-        self.pushButton_nmap_6.setStyleSheet("color : black;")
+        self.pushButton_nmap_6.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_7 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_7.setGeometry(QtCore.QRect(30, 170, 96, 35))
         self.pushButton_nmap_7.setObjectName("pushButton_nmap_7")
         self.pushButton_nmap_7.clicked.connect(self.nmap_7)
-        self.pushButton_nmap_7.setStyleSheet("color : black;")
+        self.pushButton_nmap_7.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_8 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_8.setGeometry(QtCore.QRect(130, 170, 96, 35))
         self.pushButton_nmap_8.setObjectName("pushButton_nmap_8")
         self.pushButton_nmap_8.clicked.connect(self.nmap_8)
-        self.pushButton_nmap_8.setStyleSheet("color : black;")
+        self.pushButton_nmap_8.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_9 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_9.setGeometry(QtCore.QRect(230, 170, 96, 35))
         self.pushButton_nmap_9.setObjectName("pushButton_nmap_9")
         self.pushButton_nmap_9.clicked.connect(self.nmap_9)
-        self.pushButton_nmap_9.setStyleSheet("color : black;")
+        self.pushButton_nmap_9.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_10 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_10.setGeometry(QtCore.QRect(30, 210, 96, 35))
         self.pushButton_nmap_10.setObjectName("pushButton_nmap_10")
         self.pushButton_nmap_10.clicked.connect(self.nmap_10)
-        self.pushButton_nmap_10.setStyleSheet("color : black;")
+        self.pushButton_nmap_10.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_11 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_11.setGeometry(QtCore.QRect(130, 210, 96, 35))
         self.pushButton_nmap_11.setObjectName("pushButton_nmap_11")
         self.pushButton_nmap_11.clicked.connect(self.nmap_11)
-        self.pushButton_nmap_11.setStyleSheet("color : black;")
+        self.pushButton_nmap_11.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_12 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_12.setGeometry(QtCore.QRect(230, 210, 96, 35))
         self.pushButton_nmap_12.setObjectName("pushButton_nmap_12")
         self.pushButton_nmap_12.clicked.connect(self.nmap_12)
-        self.pushButton_nmap_12.setStyleSheet("color : black;")
+        self.pushButton_nmap_12.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_13 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_13.setGeometry(QtCore.QRect(30, 250, 96, 35))
         self.pushButton_nmap_13.setObjectName("pushButton_nmap_13")
         self.pushButton_nmap_13.clicked.connect(self.nmap_13)
-        self.pushButton_nmap_13.setStyleSheet("color : black;")
+        self.pushButton_nmap_13.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_14 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_14.setGeometry(QtCore.QRect(130, 250, 96, 35))
         self.pushButton_nmap_14.setObjectName("pushButton_nmap_14")
         self.pushButton_nmap_14.clicked.connect(self.nmap_14)
-        self.pushButton_nmap_14.setStyleSheet("color : black;")
+        self.pushButton_nmap_14.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_15 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_15.setGeometry(QtCore.QRect(230, 250, 96, 35))
         self.pushButton_nmap_15.setObjectName("pushButton_nmap_15")
         self.pushButton_nmap_15.clicked.connect(self.nmap_15)
-        self.pushButton_nmap_15.setStyleSheet("color : black;")
+        self.pushButton_nmap_15.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_1 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_1.setGeometry(QtCore.QRect(30, 330, 96, 35))
         self.pushButton_tools_1.setObjectName("pushButton_tools_1")
         self.pushButton_tools_1.clicked.connect(self.firewall_detection)
-        self.pushButton_tools_1.setStyleSheet("color : black;")
+        self.pushButton_tools_1.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_2.setGeometry(QtCore.QRect(130, 330, 96, 35))
         self.pushButton_tools_2.setObjectName("pushButton_tools_2")
         self.pushButton_tools_2.clicked.connect(self.dos_attack)
-        self.pushButton_tools_2.setStyleSheet("color : black;")
+        self.pushButton_tools_2.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_3.setGeometry(QtCore.QRect(230, 330, 96, 35))
         self.pushButton_tools_3.setObjectName("pushButton_tools_3")
         self.pushButton_tools_3.clicked.connect(self.subdomain)
-        self.pushButton_tools_3.setStyleSheet("color : black;")
+        self.pushButton_tools_3.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_4.setGeometry(QtCore.QRect(30, 370, 96, 35))
         self.pushButton_tools_4.setObjectName("pushButton_tools_4")
         self.pushButton_tools_4.clicked.connect(self.dmitryscan)
-        self.pushButton_tools_4.setStyleSheet("color : black;")
+        self.pushButton_tools_4.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_5 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_5.setGeometry(QtCore.QRect(130, 370, 96, 35))
         self.pushButton_tools_5.setObjectName("pushButton_tools_5")
         self.pushButton_tools_5.clicked.connect(self.dirb)
-        self.pushButton_tools_5.setStyleSheet("color : black;")
+        self.pushButton_tools_5.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_6.setGeometry(QtCore.QRect(230, 370, 96, 35))
         self.pushButton_tools_6.setObjectName("pushButton_tools_6")
         self.pushButton_tools_6.clicked.connect(self.nikto)
-        self.pushButton_tools_6.setStyleSheet("color : black;")
+        self.pushButton_tools_6.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_tools_7 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_tools_7.setGeometry(QtCore.QRect(30, 410, 96, 35))
         self.pushButton_tools_7.setObjectName("pushButton_tools_7")
         self.pushButton_tools_7.clicked.connect(self.get_web_ip)
-        self.pushButton_tools_7.setStyleSheet("color : black;")
+        self.pushButton_tools_7.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_clear = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_clear.setGeometry(QtCore.QRect(690, 33, 96, 35))
         self.pushButton_clear.setObjectName("pushButton_clear")
         self.pushButton_clear.clicked.connect(self.clear)
-        self.pushButton_clear.setStyleSheet("color : black;")
-
-        
+        self.pushButton_clear.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_netdiscover = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_netdiscover.setGeometry(QtCore.QRect(1090, 80, 131, 35))
         self.pushButton_netdiscover.setObjectName("pushButton_netdiscover")
         self.pushButton_netdiscover.clicked.connect(self.netdiscover)
-        self.pushButton_netdiscover.setStyleSheet("color : black;")
+        self.pushButton_netdiscover.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_nmap_scan = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_nmap_scan.setGeometry(QtCore.QRect(1230, 80, 131, 35))
         self.pushButton_nmap_scan.setObjectName("pushButton_nmap_scan")
         self.pushButton_nmap_scan.clicked.connect(self.nmap_network_scanner)
-        self.pushButton_nmap_scan.setStyleSheet("color : black;")
+        self.pushButton_nmap_scan.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_payload = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_payload.setGeometry(QtCore.QRect(1060, 300, 131, 35))
         self.pushButton_payload.setObjectName("pushButton_payload")
         self.pushButton_payload.clicked.connect(self.payload)
-        self.pushButton_payload.setStyleSheet("color : black;")
+        self.pushButton_payload.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_sqlmap = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_sqlmap.setGeometry(QtCore.QRect(130, 410, 96, 35))
         self.pushButton_sqlmap.setObjectName("pushButton_sqlmap")
         self.pushButton_sqlmap.clicked.connect(self.sqlmap)
-        self.pushButton_sqlmap.setStyleSheet("color : black;")
+        self.pushButton_sqlmap.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_whois = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_whois.setGeometry(QtCore.QRect(230, 410, 96, 35))
         self.pushButton_whois.setObjectName("pushButton_whois")
         self.pushButton_whois.clicked.connect(self.whois)
-        self.pushButton_whois.setStyleSheet("color : black;")
+        self.pushButton_whois.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_Mac_Changer = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_Mac_Changer.setGeometry(QtCore.QRect(1060, 250, 131, 35))
         self.pushButton_Mac_Changer.setObjectName("pushButton_Mac_Changer")
         self.pushButton_Mac_Changer.clicked.connect(self.macc_address_change_main)
-        self.pushButton_Mac_Changer.setStyleSheet("color : black;")
+        self.pushButton_Mac_Changer.setStyleSheet("color : black;""font:bold;")
 
         self.pushButton_arp_spoofing = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_arp_spoofing.setGeometry(QtCore.QRect(1060, 200, 131, 35))
         self.pushButton_arp_spoofing.setObjectName("pushButton_arp_spoofing")
         self.pushButton_arp_spoofing.clicked.connect(self.arp_spoofing)
-        self.pushButton_arp_spoofing.setStyleSheet("color : black;")
+        self.pushButton_arp_spoofing.setStyleSheet("color : black;""font:bold;")
 ########################################---------Buttons-------########################################
 ########################################---------Raise---------########################################d
         self.label_wallpaper.raise_()
@@ -401,7 +397,7 @@ class Ui_MainWindow(QMainWindow):
         self.label_tools.setText(_translate("MainWindow", "    Tools"))
         self.label_result.setText(_translate("MainWindow", "    Result"))
         self.label_local_network_scan.setText(_translate("MainWindow", "Local Network Scan"))
-        self.label_payload.setText(_translate("MainWindow", "        Payload"))
+        self.label_payload.setText(_translate("MainWindow", "     Payload"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionInformation.setText(_translate("MainWindow", "Information"))
     def nmap_1(self):
@@ -1787,7 +1783,10 @@ class Ui_MainWindow(QMainWindow):
 
         Distributed under the MIT License. See license for more information.Copyright (c) 2021 BrktrL
         
-        You can send me application bugs/error at this address: 'brktrl@protonmail.ch' """)
+        You can send me application bugs/error at this address: 'brktrl@protonmail.ch'
+
+        https://riglsable.wixsite.com/riglsable/
+         """)
         msg1.exec_()
     def get_web_ip(self):
         try:
@@ -1971,7 +1970,8 @@ class Ui_MainWindow(QMainWindow):
         mydialog.setGeometry(600,300,530,500)
         mydialog.setMaximumSize(530,500)
         mydialog.setMinimumSize(530,500)
-        
+        mydialog.setWindowTitle("Mac Changer")
+
         self.label_wallpaper_dialog = QtWidgets.QLabel(mydialog)
         self.label_wallpaper_dialog.setGeometry(QtCore.QRect(0, 0, 530, 500))
         self.label_wallpaper_dialog.setText("")
@@ -1982,7 +1982,7 @@ class Ui_MainWindow(QMainWindow):
         self.label_macc.setGeometry(QtCore.QRect(120, 40, 300, 100))
         self.label_macc.setObjectName("label_macc")
         self.label_macc.setStyleSheet("color : white;""border-radius:10px;""font:bold 40px;""border-style:outset;""border-width:5px;""border-color:blue;")
-        self.label_macc.setText("   Mac Changer")
+        self.label_macc.setText("Mac Changer")
 
         self.pushButton_macchanger_random = QtWidgets.QPushButton(mydialog)
         self.pushButton_macchanger_random.setGeometry(50,250,145,35)
@@ -2030,6 +2030,7 @@ class Ui_MainWindow(QMainWindow):
         mydialog1.setGeometry(500,300,690,450)
         mydialog1.setMaximumSize(690,450)
         mydialog1.setMinimumSize(690,450)
+        mydialog1.setWindowTitle("Arp Spoof")
 
         self.label_wallpaper_dialog1 = QtWidgets.QLabel(mydialog1)
         self.label_wallpaper_dialog1.setGeometry(QtCore.QRect(0, 0, 690, 450))
@@ -2041,7 +2042,7 @@ class Ui_MainWindow(QMainWindow):
         self.label_arp_spoof.setGeometry(QtCore.QRect(190, 20, 300, 100))
         self.label_arp_spoof.setObjectName("label_arp_spoof")
         self.label_arp_spoof.setStyleSheet("color : white;""border-radius:10px;""font:bold 40px;""border-style:outset;""border-width:7px;""border-color:blue;")
-        self.label_arp_spoof.setText("    Arp-Spoof")
+        self.label_arp_spoof.setText("  Arp-Spoof")
 
         self.label_router_ip_address = QtWidgets.QLabel(mydialog1)
         self.label_router_ip_address.setGeometry(QtCore.QRect(50, 180, 140, 31))
@@ -2075,14 +2076,14 @@ class Ui_MainWindow(QMainWindow):
         self.pushButton_sniff_image.setStyleSheet("color : black;")
 
         self.pushButton_sniff_url = QtWidgets.QPushButton(mydialog1)
-        self.pushButton_sniff_url.setGeometry(QtCore.QRect(360, 250, 131, 35))
+        self.pushButton_sniff_url.setGeometry(QtCore.QRect(360, 180, 131, 35))
         self.pushButton_sniff_url.setObjectName("pushButton_sniff_url")
         self.pushButton_sniff_url.setText("Sniff Url")
         self.pushButton_sniff_url.clicked.connect(self.sniff_url)
         self.pushButton_sniff_url.setStyleSheet("color : black;")
 
         self.pushButton_block_net = QtWidgets.QPushButton(mydialog1)
-        self.pushButton_block_net.setGeometry(QtCore.QRect(360, 180, 131, 35))
+        self.pushButton_block_net.setGeometry(QtCore.QRect(360, 250, 131, 35))
         self.pushButton_block_net.setObjectName("pushButton_block_net")
         self.pushButton_block_net.setText("Block NET")
         self.pushButton_block_net.clicked.connect(self.block_net)
