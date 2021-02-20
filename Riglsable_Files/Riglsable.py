@@ -1785,7 +1785,7 @@ class Ui_MainWindow(QMainWindow):
         
         You can send me application bugs/error at this address: 'brktrl@protonmail.ch'
 
-        https://riglsable.wixsite.com/riglsable/
+        http://riglsable.rf.gd/
          """)
         msg1.exec_()
     def get_web_ip(self):

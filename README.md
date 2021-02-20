@@ -18,7 +18,7 @@
       <div align="center">
     <a href="mailto:brktrl@protonmail.ch">Report Bug</a>
     <br>
-    <a href="https://riglsable.wixsite.com/riglsable" target="_blank">Web Site</a>
+    <a href="http://riglsable.rf.gd/" target="_blank">Web Site</a>
     </div>
     </address>
     </p>
@@ -141,7 +141,7 @@ Berkay Şen - [Instagram](https://www.instagram.com/brktrll.z/) - @Brktrll.z <br
 E-Mail Address:E-Mail - brktrl@protonmail.ch
 
 Project Link: [https://github.com/Brktrlw/Riglsable](https://github.com/Brktrlw/Riglsable)<br>
-Web Site Link: [https://riglsable.wixsite.com/riglsable](https://riglsable.wixsite.com/riglsable)
+Web Site Link: [http://riglsable.rf.gd/](http://riglsable.rf.gd/)
 
 
 
