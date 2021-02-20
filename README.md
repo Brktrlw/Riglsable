@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Brktrlw/Riglsable">
-    <img src="Riglsable_Files/images/logo1.png" alt="Logo" width="140" height="140">
+    <img src="Riglsable_Files/images/icon.png" alt="Logo" width="140" height="140">
   </a>
 
   <h3 align="center">Riglsable v1.4 beta</h3>
