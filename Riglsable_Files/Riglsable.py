@@ -101,7 +101,7 @@ class Ui_MainWindow(QMainWindow):
         self.lineEdit_router = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_router.setGeometry(QtCore.QRect(1090, 30, 131, 33))
         self.lineEdit_router.setObjectName("lineEdit_router")
-        self.lineEdit_router.setPlaceholderText("Local Router IP ")
+        self.lineEdit_router.setPlaceholderText("Local Gateway IP ")
         self.lineEdit_router.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")      
 ########################################---------Line Edits----########################################
 ########################################---------Buttons-------########################################
@@ -360,7 +360,7 @@ class Ui_MainWindow(QMainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Riglsable "))
         self.pushButton_nmap_1.setText(_translate("MainWindow", "Stndrt Scan"))
-        self.label_localip.setText(_translate("MainWindow", "Local Router IP :"))
+        self.label_localip.setText(_translate("MainWindow", "Local Gateway IP :"))
         self.pushButton_nmap_2.setText(_translate("MainWindow", "SYN Scan"))
         self.pushButton_nmap_3.setText(_translate("MainWindow", "Open Ports"))
         self.label_mac.setText(_translate("MainWindow", "Mac Changer:"))
@@ -1259,7 +1259,7 @@ class Ui_MainWindow(QMainWindow):
             msg9.setBaseSize(300,300)
             msg9.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg9.setIcon(QMessageBox.Warning)
-            msg9.setText("Please enter the target IP address and router IP address! !")
+            msg9.setText("Please enter the target IP address and Gateway IP address! !")
             msg9.exec_()
         elif self.lineEdit_router_ip_address.text()=="":
             msg6 = QMessageBox()
@@ -1267,7 +1267,7 @@ class Ui_MainWindow(QMainWindow):
             msg6.setBaseSize(300,300)
             msg6.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg6.setIcon(QMessageBox.Warning)
-            msg6.setText("Please enter the router IP address!")
+            msg6.setText("Please enter the Gateway IP address!")
             msg6.exec_()
         elif self.lineEdit_target_ip_address.text()=="":
             msg5 = QMessageBox()
@@ -1299,7 +1299,7 @@ class Ui_MainWindow(QMainWindow):
             msg9.setBaseSize(300,300)
             msg9.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg9.setIcon(QMessageBox.Warning)
-            msg9.setText("Please enter the target IP address and router IP address! !")
+            msg9.setText("Please enter the target IP address and Gateway IP address! !")
             msg9.exec_()
         elif self.lineEdit_router_ip_address.text()=="":
             msg6 = QMessageBox()
@@ -1307,7 +1307,7 @@ class Ui_MainWindow(QMainWindow):
             msg6.setBaseSize(300,300)
             msg6.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg6.setIcon(QMessageBox.Warning)
-            msg6.setText("Please enter the router IP address!")
+            msg6.setText("Please enter the Gateway IP address!")
             msg6.exec_()
         elif self.lineEdit_target_ip_address.text()=="":
             msg5 = QMessageBox()
@@ -1339,7 +1339,7 @@ class Ui_MainWindow(QMainWindow):
             msg9.setBaseSize(300,300)
             msg9.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg9.setIcon(QMessageBox.Warning)
-            msg9.setText("Please enter the target IP address and router IP address! !")
+            msg9.setText("Please enter the target IP address and Gateway IP address! !")
             msg9.exec_()
         elif self.lineEdit_router_ip_address.text()=="":
             msg6 = QMessageBox()
@@ -1347,7 +1347,7 @@ class Ui_MainWindow(QMainWindow):
             msg6.setBaseSize(300,300)
             msg6.setWindowIcon(QtGui.QIcon('images/icon.png'))
             msg6.setIcon(QMessageBox.Warning)
-            msg6.setText("Please enter the router IP address!")
+            msg6.setText("Please enter the Gateway IP address!")
             msg6.exec_()
         elif self.lineEdit_target_ip_address.text()=="":
             msg5 = QMessageBox()
@@ -1398,7 +1398,7 @@ class Ui_MainWindow(QMainWindow):
                 msg5.setBaseSize(300,300)
                 msg5.setWindowIcon(QtGui.QIcon('images/icon.png'))
                 msg5.setIcon(QMessageBox.Warning)
-                msg5.setText("Please enter Local Router IP address")
+                msg5.setText("Please enter Local Gateway IP address")
                 msg5.exec_()
             else:
                 self.plainTextEdit_result.clear()
@@ -1429,7 +1429,7 @@ class Ui_MainWindow(QMainWindow):
                 msg5.setBaseSize(300,300)
                 msg5.setWindowIcon(QtGui.QIcon('images/icon.png'))
                 msg5.setIcon(QMessageBox.Warning)
-                msg5.setText("Please enter Local Router IP address")
+                msg5.setText("Please enter Local Gateway IP address")
                 msg5.exec_()
             else:
                 self.plainTextEdit_result.clear()
@@ -2228,7 +2228,7 @@ class Ui_MainWindow(QMainWindow):
         self.label_router_ip_address = QtWidgets.QLabel(mydialog1)
         self.label_router_ip_address.setGeometry(QtCore.QRect(50, 180, 140, 31))
         self.label_router_ip_address.setObjectName("label_router_ip_address")
-        self.label_router_ip_address.setText(" Router IP Address :")
+        self.label_router_ip_address.setText(" Gateway IP Address :")
         self.label_router_ip_address.setStyleSheet("color : white;""border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
 
         self.label_target_ip_address = QtWidgets.QLabel(mydialog1)
@@ -2240,7 +2240,7 @@ class Ui_MainWindow(QMainWindow):
         self.lineEdit_router_ip_address = QtWidgets.QLineEdit(mydialog1)
         self.lineEdit_router_ip_address.setGeometry(QtCore.QRect(210, 180, 131, 33))
         self.lineEdit_router_ip_address.setObjectName("lineEdit_router_ip_address")
-        self.lineEdit_router_ip_address.setPlaceholderText(" Router IP ")
+        self.lineEdit_router_ip_address.setPlaceholderText(" Gateway IP ")
         self.lineEdit_router_ip_address.setStyleSheet("border-radius:10px;""font:bold 14px;""border-style:outset;""border-width:2px;""border-color:blue;")
 
         self.lineEdit_target_ip_address = QtWidgets.QLineEdit(mydialog1)
